@@ -1,4 +1,4 @@
-package br.com.ControleDeGastos.application.Utils;
+package br.com.ControleDeGastos.application.utils;
 
 import org.springframework.stereotype.Service;
 

@@ -1,13 +1,12 @@
 package br.com.ControleDeGastos.application.domain.entity;
 
 
-import br.com.ControleDeGastos.application.Utils.DateTimeUtils;
+import br.com.ControleDeGastos.application.utils.DateTimeUtils;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
