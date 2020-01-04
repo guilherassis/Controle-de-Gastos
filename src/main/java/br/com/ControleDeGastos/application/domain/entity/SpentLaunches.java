@@ -23,8 +23,8 @@ public class SpentLaunches {
     @Column(name = "dateSpent")
     private LocalDateTime dateSpent;
 
-    @Column(name = "amountConsumption",length = 255)
-    private String amountConsumption;
+    @Column(name = "amountInstallments")
+    private int amountInstallments;
 
     @Column(name = "valueSpent")
     private float valueSpent;
