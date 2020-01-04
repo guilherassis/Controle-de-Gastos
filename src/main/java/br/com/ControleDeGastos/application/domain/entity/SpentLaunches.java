@@ -31,8 +31,11 @@ public class SpentLaunches {
 
     @ManyToOne
     @JoinColumn(name = "bills_id")
-    private Bills bills;
+    private Bills bills_id;
 
+    @ManyToOne
+    @JoinColumn(name = "paymentType_id")
+    private PaymentType paymentType_id;
 
 
 }
