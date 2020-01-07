@@ -20,10 +20,10 @@ public class SpentLaunches {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "dateSpent")
+    @Column(name = "dateSpent",nullable = false)
     private LocalDateTime dateSpent;
 
-    @Column(name = "amountInstallments")
+    @Column(name = "amountInstallments",nullable = false)
     private int amountInstallments;
 
     @Column(name = "valueSpent")

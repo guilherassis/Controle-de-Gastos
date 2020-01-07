@@ -23,7 +23,7 @@ public class Prospection {
     @Column(name = "description",nullable = false,length = 255)
     private String description;
 
-    @Column(name = "installments")
+    @Column(name = "installments",nullable = false)
     private int installments;
 
     @Column(name = "value",nullable = false)

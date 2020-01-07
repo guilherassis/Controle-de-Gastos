@@ -129,17 +129,17 @@
 				<artifactId>liquibase-maven-plugin</artifactId>
 				<version>${maven.liquibase.plugin.version}</version>
 				<configuration>
-					<changeLogFile>src/main/resources/db.changelog/db-changelog-master.xml</changeLogFile>
+					<changeLogFile>src/main/resources/db/changelog/db-changelog-master.xml</changeLogFile>
 					<databaseChangeLogTableName>database_changelog</databaseChangeLogTableName>
 					<databaseChangeLogLockTableName>database_changelog_lock</databaseChangeLogLockTableName>
 					<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
 					<verbose>true</verbose>
 					<driver>com.mysql.jdbc.Driver</driver>
 					<url>
-						jdbc:mysql://localhost:3306/application?serverTimezone=UTC
+						jdbc:mysql://localhost:3306/controledegastos?serverTimezone=UTC
 					</url>
-					<username>guilherme</username>
-					<password>MinhaSenha#1234</password>
+					<username>root</username>
+					<password>root</password>
 					<rollbackCount>1</rollbackCount>
 				</configuration>
 			</plugin>
