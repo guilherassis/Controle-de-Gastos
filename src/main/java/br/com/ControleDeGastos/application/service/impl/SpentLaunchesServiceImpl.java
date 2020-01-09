@@ -1,6 +1,6 @@
 package br.com.ControleDeGastos.application.service.impl;
 
-import br.com.ControleDeGastos.application.domain.dao.SpentLaunchesRepository;
+import br.com.ControleDeGastos.application.domain.repository.SpentLaunchesRepository;
 import br.com.ControleDeGastos.application.domain.entity.SpentLaunches;
 import br.com.ControleDeGastos.application.service.SpentLaunchesServiceCustom;
 import org.springframework.beans.factory.annotation.Autowired;

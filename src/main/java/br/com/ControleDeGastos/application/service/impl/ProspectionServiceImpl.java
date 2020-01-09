@@ -1,12 +1,11 @@
 package br.com.ControleDeGastos.application.service.impl;
 
-import br.com.ControleDeGastos.application.domain.dao.ProspectionRepository;
+import br.com.ControleDeGastos.application.domain.repository.ProspectionRepository;
 import br.com.ControleDeGastos.application.domain.entity.Prospection;
 import br.com.ControleDeGastos.application.service.ProspectionServiceCustom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 

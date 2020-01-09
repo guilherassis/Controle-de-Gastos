@@ -1,12 +1,11 @@
 package br.com.ControleDeGastos.application.service.impl;
 
-import br.com.ControleDeGastos.application.domain.dao.MonthlyIncomeRepository;
+import br.com.ControleDeGastos.application.domain.repository.MonthlyIncomeRepository;
 import br.com.ControleDeGastos.application.domain.entity.MonthlyIncome;
 import br.com.ControleDeGastos.application.service.MonthlyIncomeServiceCustom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 

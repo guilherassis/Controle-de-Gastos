@@ -1,13 +1,12 @@
 package br.com.ControleDeGastos.application.service.impl;
 
 
-import br.com.ControleDeGastos.application.domain.dao.BillsRepository;
+import br.com.ControleDeGastos.application.domain.repository.BillsRepository;
 import br.com.ControleDeGastos.application.domain.entity.Bills;
 import br.com.ControleDeGastos.application.service.BillsServiceCustom;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 

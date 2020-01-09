@@ -1,6 +1,6 @@
 package br.com.ControleDeGastos.application.service.impl;
 
-import br.com.ControleDeGastos.application.domain.dao.UserRepository;
+import br.com.ControleDeGastos.application.domain.repository.UserRepository;
 import br.com.ControleDeGastos.application.domain.entity.User;
 import br.com.ControleDeGastos.application.service.UserServiceCustom;
 import org.springframework.beans.factory.annotation.Autowired;
