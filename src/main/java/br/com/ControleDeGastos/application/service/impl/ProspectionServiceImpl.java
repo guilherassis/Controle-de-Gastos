@@ -16,25 +16,25 @@ public class ProspectionServiceImpl implements ProspectionServiceCustom {
     @Autowired
     ProspectionRepository prospectionRepository;
 
-    @Transactional
+    @Override
     public Optional<Prospection> findById(Long id){
         return prospectionRepository.findById(id);
 
     }
 
-    @Transactional
+    @Override
     public List<Prospection> findAll(){
         return prospectionRepository.findAll();
 
     }
 
-    @Transactional
+    @Override
     public void delete(Long id){
         prospectionRepository.deleteById(id);
 
     }
 
-    @Transactional
+    @Override
     public Prospection save(Prospection prospection){
        return prospectionRepository.save(prospection);
 

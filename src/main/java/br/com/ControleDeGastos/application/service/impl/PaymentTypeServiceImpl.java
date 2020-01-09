@@ -16,24 +16,24 @@ public class PaymentTypeServiceImpl implements PaymentTypeServiceCustom {
     @Autowired
     PaymentTypeRepository paymentTypeRepository;
 
-    @Transactional
+    @Override
     public Optional<PaymentType> findById(Long id){
         return paymentTypeRepository.findById(id);
 
     }
 
-    @Transactional
+    @Override
     public List<PaymentType> findAll(){
         return paymentTypeRepository.findAll();
 
     }
 
-    @Transactional
+    @Override
     public PaymentType save(PaymentType paymentType){
        return paymentTypeRepository.save(paymentType);
     }
 
-    @Transactional
+    @Override
     public void deleteById(Long id){
         paymentTypeRepository.deleteById(id);
 

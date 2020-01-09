@@ -16,25 +16,25 @@ public class MonthlyIncomeServiceImpl implements MonthlyIncomeServiceCustom {
     @Autowired
     MonthlyIncomeRepository monthlyIncomeRepository;
 
-    @Transactional
+    @Override
     public Optional<MonthlyIncome> findbyId(Long id){
         return monthlyIncomeRepository.findById(id);
 
     }
 
-    @Transactional
+    @Override
     public List<MonthlyIncome> findByAll(){
         return monthlyIncomeRepository.findAll();
 
     }
 
-    @Transactional
+    @Override
     public MonthlyIncome save(MonthlyIncome monthlyIncome){
         return monthlyIncomeRepository.save(monthlyIncome);
 
     }
 
-    @Transactional
+    @Override
     public void delete(Long id){
         monthlyIncomeRepository.deleteById(id);
     }

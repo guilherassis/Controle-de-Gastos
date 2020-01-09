@@ -17,31 +17,31 @@ public class BillsServiceImpl implements BillsServiceCustom {
     @Autowired
     BillsRepository billsRepository;
 
-    @Transactional
+    @Override
     public List<Bills> listAllBills(){
         return billsRepository.findAll();
 
     }
 
-    @Transactional
+    @Override
     public Optional<Bills> findByIdBills(Long id){
         return billsRepository.findById(id);
 
     }
 
-    @Transactional
+    @Override
     public Bills save(Bills bills){
         return billsRepository.save(bills);
 
     }
 
-    @Transactional
+    @Override
     public void delete(Bills bills){
         billsRepository.delete(bills);
 
     }
 
-    @Transactional
+    @Override
     public void deleteById(Long id){
         billsRepository.deleteById(id);
 
