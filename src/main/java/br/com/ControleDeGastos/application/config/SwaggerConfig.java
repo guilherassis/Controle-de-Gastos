@@ -28,7 +28,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo(){
         return new ApiInfo(
-                "Controle de Gastos Api",
+                "Controle de Gastos - Api",
                 "Um sistema completo para controlar contas a pagar e receber, e controlar seus gastos pessoais.",
                 "1.0.0-RELEASE",
                 "Terms of service",

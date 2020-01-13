@@ -35,4 +35,9 @@ public class UserServiceImpl implements UserServiceCustom {
     public User save(User user) {
         return userRepository.save(user);
     }
+
+    public User findByUserName(String name) {
+        return userRepository.findUserByName(name);
+
+    }
 }
