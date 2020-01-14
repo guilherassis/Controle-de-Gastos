@@ -15,12 +15,10 @@ public class UserController{
     @Autowired
     UserServiceImpl userService;
 
-    @Autowired
-    private PasswordEncoder bcryptEncoder;
-
-    @PutMapping("")
+        @PutMapping("")
     public ResponseEntity save(@RequestBody User user){
-        user.setPassword(bcryptEncoder.encode(user.getPassword()));
+
+        System.out.println(user);
         return ResponseEntity.ok(userService.save(user));
 
     }

@@ -27,7 +27,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
         }
 
-        System.out.println(user);
         return new UserRepositoryDetails(user);
 
 
