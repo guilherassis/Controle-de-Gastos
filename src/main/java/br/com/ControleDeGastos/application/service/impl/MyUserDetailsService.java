@@ -44,11 +44,6 @@ public class MyUserDetailsService implements UserDetailsService {
 
 
         @Override
-        public Collection<? extends GrantedAuthority> getAuthorities() {
-            return null;
-        }
-
-        @Override
         public String getPassword() {
             return super.getPassword();
         }
@@ -56,6 +51,11 @@ public class MyUserDetailsService implements UserDetailsService {
         @Override
         public String getUsername() {
             return this.getName();
+        }
+
+        @Override
+        public Collection<? extends GrantedAuthority> getAuthorities() {
+            return null;
         }
 
         @Override

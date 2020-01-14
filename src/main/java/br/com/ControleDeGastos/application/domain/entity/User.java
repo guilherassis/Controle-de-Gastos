@@ -40,13 +40,12 @@ public class User {
     private LocalDateTime createDate;
 
 
-    public User(User user){
+    public User(User user) {
         super();
         this.id=user.getId();
-        this.name=user.getName();
-        this.email=user.getEmail();
-        this.password=user.getPassword();
-
+        this.name = user.getName();
+        this.password = user.getPassword();
+        this.email = user.getEmail();
     }
 
     public String getName() {

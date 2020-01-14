@@ -15,6 +15,7 @@ public class UserController{
     @Autowired
     UserServiceImpl userService;
 
+    @Autowired
     private PasswordEncoder bcryptEncoder;
 
     @PutMapping("")
