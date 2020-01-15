@@ -26,7 +26,7 @@ public class SpentLaunchesServiceImpl implements SpentLaunchesServiceCustom {
     }
 
     @Override
-    public void delete(Long id) {
+    public void deleteById(Long id) {
         spentLaunchesRepository.deleteById(id);
 
     }

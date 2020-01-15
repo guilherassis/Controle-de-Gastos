@@ -9,7 +9,7 @@ public interface SpentLaunchesServiceCustom {
 
     Optional<SpentLaunches> findById(Long id);
     List<SpentLaunches> findAll();
-    void delete(Long id);
+    void deleteById(Long id);
     SpentLaunches save(SpentLaunches spentLaunches);
 
 }
