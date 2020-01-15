@@ -42,8 +42,8 @@ public class UserServiceImpl implements UserServiceCustom {
         return userRepository.save(user);
     }
 
-    public User findByUserName(String name) {
-        return userRepository.findUserByName(name);
+    public User findByUserEmail(String email) {
+        return userRepository.findUserByEmail(email);
 
     }
 }

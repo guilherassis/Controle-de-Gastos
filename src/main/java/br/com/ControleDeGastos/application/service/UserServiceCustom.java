@@ -11,6 +11,6 @@ public interface UserServiceCustom {
     List<User> findAll();
     void delete(Long id);
     User save(User user);
-    User findByUserName(String name);
+    User findByUserEmail(String email);
 
 }

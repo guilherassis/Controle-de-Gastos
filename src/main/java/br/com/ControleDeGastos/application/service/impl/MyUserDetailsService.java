@@ -17,12 +17,12 @@ public class MyUserDetailsService implements UserDetailsService {
     UserServiceImpl service;
 
     @Override
-    public UserDetails loadUserByUsername(String name) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
-        User user =  service.findByUserName(name);
+        User user =  service.findByUserEmail(email);
 
         if(user == null){
-            throw new UsernameNotFoundException("Usuário não encontrado com nome de usuario"+name);
+            throw new UsernameNotFoundException("Usuário não encontrado com nome de usuario"+email);
 
 
         }
@@ -49,7 +49,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
         @Override
         public String getUsername() {
-            return this.getName();
+            return this.getEmail();
         }
 
         @Override
