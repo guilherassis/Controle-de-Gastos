@@ -7,8 +7,8 @@ import java.util.Optional;
 
 public interface BillsServiceCustom {
 
-    List<Bills> listAllBills();
-    Optional<Bills> findByIdBills(Long id);
+    List<Bills> findAll();
+    Optional<Bills> findById(Long id);
     Bills save(Bills bills);
     void delete(Bills bills);
     void deleteById(Long id);

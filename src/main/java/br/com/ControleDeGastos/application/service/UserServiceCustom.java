@@ -9,7 +9,7 @@ public interface UserServiceCustom {
 
     Optional<User> findById(Long id);
     List<User> findAll();
-    void delete(Long id);
+    void deleteById(Long id);
     User save(User user);
     User findByUserEmail(String email);
 

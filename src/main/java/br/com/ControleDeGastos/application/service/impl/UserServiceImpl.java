@@ -31,7 +31,7 @@ public class UserServiceImpl implements UserServiceCustom {
     }
 
     @Override
-    public void delete(Long id) {
+    public void deleteById(Long id) {
         userRepository.deleteById(id);
 
     }

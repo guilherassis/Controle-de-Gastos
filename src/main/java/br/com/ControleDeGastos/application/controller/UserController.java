@@ -15,10 +15,8 @@ public class UserController{
     @Autowired
     UserServiceImpl userService;
 
-        @PutMapping("")
+    @PutMapping("")
     public ResponseEntity save(@RequestBody User user){
-
-        System.out.println(user);
         return ResponseEntity.ok(userService.save(user));
 
     }
@@ -34,7 +32,10 @@ public class UserController{
 
     }
 
-
-
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteById(@PathVariable("id") Long id){
+        userService.deleteById(id);
+        return ResponseEntity.ok().build();
+    }
 
 }

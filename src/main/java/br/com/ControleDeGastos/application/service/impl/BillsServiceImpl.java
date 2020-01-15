@@ -17,13 +17,13 @@ public class BillsServiceImpl implements BillsServiceCustom {
     BillsRepository billsRepository;
 
     @Override
-    public List<Bills> listAllBills(){
+    public List<Bills> findAll(){
         return billsRepository.findAll();
 
     }
 
     @Override
-    public Optional<Bills> findByIdBills(Long id){
+    public Optional<Bills> findById(Long id){
         return billsRepository.findById(id);
 
     }
