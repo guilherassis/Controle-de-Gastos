@@ -28,7 +28,7 @@ public class ProspectionServiceImpl implements ProspectionServiceCustom {
     }
 
     @Override
-    public void delete(Long id){
+    public void deleteById(Long id){
         prospectionRepository.deleteById(id);
 
     }

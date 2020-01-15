@@ -10,7 +10,7 @@ public interface ProspectionServiceCustom {
 
     Optional<Prospection> findById(Long id);
     List<Prospection> findAll();
-    void delete(Long id);
+    void deleteById(Long id);
     Prospection save(Prospection prospection);
 
 }
