@@ -26,7 +26,7 @@ public class BillsController {
 
     }
 
-    @PutMapping("/save")
+    @PutMapping("")
     public ResponseEntity save(@RequestBody Bills bills){
         return ResponseEntity.ok(billsService.save(bills));
 

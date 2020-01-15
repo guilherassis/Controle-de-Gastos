@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface MonthlyIncomeServiceCustom {
 
-    void delete(Long id);
+    void deleteById(Long id);
     MonthlyIncome save(MonthlyIncome monthlyIncome);
-    List<MonthlyIncome> findByAll();
+    List<MonthlyIncome> findAll();
     Optional<MonthlyIncome> findbyId(Long id);
 
 

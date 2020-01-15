@@ -22,7 +22,7 @@ public class MonthlyIncomeServiceImpl implements MonthlyIncomeServiceCustom {
     }
 
     @Override
-    public List<MonthlyIncome> findByAll(){
+    public List<MonthlyIncome> findAll(){
         return monthlyIncomeRepository.findAll();
 
     }
@@ -34,7 +34,7 @@ public class MonthlyIncomeServiceImpl implements MonthlyIncomeServiceCustom {
     }
 
     @Override
-    public void delete(Long id){
+    public void deleteById(Long id){
         monthlyIncomeRepository.deleteById(id);
     }
 
