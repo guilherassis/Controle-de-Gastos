@@ -25,7 +25,7 @@ public class ProspectionController {
 
     }
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity save(@RequestBody Prospection prospection){
         return ResponseEntity.ok(prospectionService.save(prospection));
 

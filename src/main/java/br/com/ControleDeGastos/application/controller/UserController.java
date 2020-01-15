@@ -15,7 +15,7 @@ public class UserController{
     @Autowired
     UserServiceImpl userService;
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity save(@RequestBody User user){
         return ResponseEntity.ok(userService.save(user));
 

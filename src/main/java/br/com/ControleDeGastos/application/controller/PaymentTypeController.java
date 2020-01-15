@@ -26,7 +26,7 @@ public class PaymentTypeController {
 
     }
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity save(@RequestBody PaymentType paymentType){
         return ResponseEntity.ok(paymentTypeService.save(paymentType));
 

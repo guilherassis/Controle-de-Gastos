@@ -25,7 +25,7 @@ public class MonthlyIncomeController {
 
     }
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity save(@RequestBody MonthlyIncome monthlyIncome){
         return ResponseEntity.ok(monthlyIncomeService.save(monthlyIncome));
 

@@ -25,7 +25,7 @@ public class SpentLaunchesController {
 
     }
 
-    @PutMapping("")
+    @PostMapping("")
     public ResponseEntity save(@RequestBody SpentLaunches spentLaunches){
         return ResponseEntity.ok(spentLaunchesService.save(spentLaunches));
 
