@@ -21,15 +21,16 @@ public class UserServiceImpl implements UserServiceCustom {
 
 
     @Override
-    public User changeNameByName(String name) {
-    	userRepository.changeNameByName(name);
+    public User changeNameByName(String name, String newName) {
+    	userRepository.changeNameByName(name,newName);
     	
-    	return userRepository.findUserByName(name);
+    	return userRepository.findUserByName(newName);
     	
     }
     
     @Override
     public User changePasswordByName(String name, String password) {
+        password = (bcryptEncoder.encode(password));
     	userRepository.changePasswordByName(name, password);
     	return userRepository.findUserByName(name);
     	
