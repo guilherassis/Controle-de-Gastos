@@ -44,9 +44,9 @@ public class UserController{
     	
     }
     
-    @PutMapping("/changeName/{name}")
-    public ResponseEntity changeNameByName(@PathVariable("name") String name) {
-    	return ResponseEntity.ok(userService.changeNameByName(name));
+    @PutMapping("/changeName/{name}/{newName}")
+    public ResponseEntity changeNameByName(@PathVariable("name") String name, @PathVariable("newName") String newName) {
+    	return ResponseEntity.ok(userService.changeNameByName(name, newName));
     	
     }
     
