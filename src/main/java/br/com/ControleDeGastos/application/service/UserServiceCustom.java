@@ -13,7 +13,7 @@ public interface UserServiceCustom {
     User save(User user);
     User findByUserEmail(String email);
     User findByName(String name);
-    User changeNameByName(String name);
+    User changeNameByName(String name, String newName);
     User changePasswordByName(String name, String password);
     User changeEmailByName(String name, String email);
 
