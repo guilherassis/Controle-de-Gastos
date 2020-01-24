@@ -1,4 +1,4 @@
-# Controle de Gastos
+# Controle de Gastos - BackEnd
 
 Um sistema completo para controlar contas a pagar e receber, e controlar seus gastos pessoais.
 
