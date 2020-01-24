@@ -37,5 +37,29 @@ public class UserController{
         userService.deleteById(id);
         return ResponseEntity.ok().build();
     }
+    
+    @GetMapping("/name/{name}")
+    public ResponseEntity findByName(@PathVariable("name") String name) {
+    	return ResponseEntity.ok(userService.findByName(name));
+    	
+    }
+    
+    @PutMapping("/changeName/{name}")
+    public ResponseEntity changeNameByName(@PathVariable("name") String name) {
+    	return ResponseEntity.ok(userService.changeNameByName(name));
+    	
+    }
+    
+    @PutMapping("/changeEmail/{name}/{email}")
+    public ResponseEntity changeEmailByName(@PathVariable("name") String name,@PathVariable("email") String email) {
+    	return ResponseEntity.ok(userService.changeEmailByName(name, email));
+    	
+    }
+    
+    @PutMapping("/changePassword/{name}/{password}")
+    public ResponseEntity changePasswordByName(@PathVariable("name") String name, @PathVariable("password") String password) {
+    	return ResponseEntity.ok(userService.changePasswordByName(name, password));
+    	
+    }
 
 }
