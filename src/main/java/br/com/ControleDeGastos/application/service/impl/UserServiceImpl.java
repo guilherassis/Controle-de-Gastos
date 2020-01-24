@@ -21,6 +21,34 @@ public class UserServiceImpl implements UserServiceCustom {
 
 
     @Override
+    public User changeNameByName(String name) {
+    	userRepository.changeNameByName(name);
+    	
+    	return userRepository.findUserByName(name);
+    	
+    }
+    
+    @Override
+    public User changePasswordByName(String name, String password) {
+    	userRepository.changePasswordByName(name, password);
+    	return userRepository.findUserByName(name);
+    	
+    	
+    }
+    
+    @Override
+    public User changeEmailByName(String name, String email) {
+    	userRepository.changeEmailByName(name, email);
+    	return userRepository.findUserByName(name);
+    }
+    
+    @Override
+    public User findByName(String name) {
+    	return userRepository.findUserByName(name);
+    	
+    }
+    
+    @Override
     public Optional<User> findById(Long id) {
         return userRepository.findById(id);
     }
