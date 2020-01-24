@@ -12,5 +12,9 @@ public interface UserServiceCustom {
     void deleteById(Long id);
     User save(User user);
     User findByUserEmail(String email);
+    User findByName(String name);
+    User changeNameByName(String name);
+    User changePasswordByName(String name, String password);
+    User changeEmailByName(String name, String email);
 
 }
